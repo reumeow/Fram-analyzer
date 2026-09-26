@@ -1,15 +1,11 @@
-#include <Geode/Geode.hpp>
+name: Build Geode Mod
 
-using namespace geode::prelude;
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
 
-#include <Geode/modify/PlayLayer.hpp>
-
-class $modify(AnalyzerPlayLayer, PlayLayer) {
-    void postUpdate(float dt) {
-        PlayLayer::postUpdate(dt);
-    }
-};
-
-$execute {
-    log::info("ReuHUB Frame Analyzer loaded successfully!");
-}
+jobs:
+  build:
+    uses: geode-sdk/geode-actions/.github/workflows/build.yml@main
