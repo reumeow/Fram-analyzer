@@ -1,0 +1,10 @@
+{
+	"geode": "4.0.0",
+	"version": "1.0.0",
+	"id": "reumeow.frame_analyzer",
+	"name": "Frame Window Analyzer",
+	"developer": "reumeow",
+	"description": "Analyzes .gdr/.2gdr replays and visualizes frame windows with custom colors and sounds.",
+	"dependencies": [],
+	"settings": {}
+}
