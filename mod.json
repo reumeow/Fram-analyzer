@@ -6,5 +6,30 @@
 	"developer": "reumeow",
 	"description": "Analyzes .gdr/.2gdr replays and visualizes frame windows with custom colors and sounds.",
 	"dependencies": [],
-	"settings": {}
+	"settings": {
+		"color-1f": {
+			"name": "1 Frame Color",
+			"description": "Color for absolute pixel-perfect frames (1f)",
+			"type": "color",
+			"default": "#FF0000"
+		},
+		"color-2-3f": {
+			"name": "2-3 Frames Color",
+			"description": "Color for tight windows (2-3 frames)",
+			"type": "color",
+			"default": "#FFA500"
+		},
+		"color-4-6f": {
+			"name": "4-6 Frames Color",
+			"description": "Color for medium windows (4-6 frames)",
+			"type": "color",
+			"default": "#FFFF00"
+		},
+		"color-7-9f": {
+			"name": "7-9 Frames Color",
+			"description": "Color for comfortable windows (7-9 frames)",
+			"type": "color",
+			"default": "#00FF00"
+		}
+	}
 }
