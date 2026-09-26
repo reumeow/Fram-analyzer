@@ -8,16 +8,4 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Build Mod
-        uses: geode-sdk/build-geode-mod@main
-        id: build
-
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: reumeow.frame_analyzer
-          path: ${{ steps.build.outputs.build-output }}
+    uses: geode-sdk/geode-actions/.github/workflows/build.yml@main
